@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hana21.net</title>
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <!-- ナビゲーション -->
+  <nav id="navbar" class="navbar navbar-expand-md bg-light" style="position: fixed; width: 100%; z-index: 1000;">
+    <div class="container">
+      <!-- サブコンポーネント -->
+      <!-- ブランド -->
+      <a class="navbar-brand" href="index.html"><img class="main-logo" src="images/hana21net.png" alt=""></a>
+      <!-- 切り替えボタン -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- ナビテーション詳細 -->
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <!-- ナビゲーションメニュー -->
+        <!-- 左側メニュー：各コンテンツへのリンクと言語選択ボタン -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a href="aboutus.html" class="nav-link nav-bar-list">会社案内</a>
+          </li>
+          <!-- ドロップダウン　start -->
+          <li class="nav-item dropdown nav-bar-list">
+            <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              サービス
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" class="dropdown-item">不動産投資</a>
+              <a href="#" class="dropdown-item">ラグジュアリー旅行</a>
+              <a href="#" class="dropdown-item">ギフトサービス</a>
+              <a href="#" class="dropdown-item">HANA21 クラブ</a>
+              <a href="#" class="dropdown-item">米国確定申告</a>
+            </div>
+          </li>
+          <!-- ドロップダウン end -->
+        </ul>
+
+        <!-- 右側メニュー：言語選択ボタン -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link btn btn-primary inquiry">お問い合わせ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="images/JP-flag.png" alt="">JP
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" class="dropdown-item"><img src="images/US-flag.png" alt="">US</a>
+              <a href="#" class="dropdown-item"><img src="images/KR-flag.png" alt="">KR</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- / ナビゲーション -->
+
+
+  <!-- メイン -->
+  <main>
+    <!-- メインテーマ -->
+    <section id="top-theme" class="top-theme">
+      <div class="d-flex col-md-8 justify-content-center m-0">
+        <div class="my-5 py-5" id="wrapper">
+          <h2 class="justify-content-center mt-5 ps-5" style="line-height:3rem"><br>あなたのニーズに寄り添う<br>総合サービス</h2>
+          <h1 class="justify-content-center ps-5">SERVICE<br>PORTFOLIO</h1>
+        </div>
+      </div>
+    </section>
+    <!-- / メインテーマ -->
+
+    <!-- サービス -->
+    <section id="services" class="bg-dark py-5">
+      <div class="container py-5">
+        <div class="feature ipsSpacer_bottom_double ipsGrid py-5">
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+            <div>
+              <img width="600" style="object-fit: cover;" src="images/real-estate1.jpg" class="img-thumbnail" alt="">
+            </div>
+          </div>
+
+          <div class="ipsGrid_span7 ipsType_left">
+            <h2 class="heading_large gs_reveal">国内外の不動産投資</h2>
+            <h3 class="heading_large gs_reveal">Japan & Overseas Real Estate Investment </h3>
+            <br>
+            <div class="gs_reveal">
+              <p class="detail gs_reveal">良い資産形成及びドル資産を増やしましょう</p>
+              <a class="gs_reveal " href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#adadad"
+                  class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                  <path fill-rule="evenodd"
+                    d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                </svg>
+                詳細</a>
+              </div">
+            </div>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid py-5">
+          <div class="ipsGrid_span7 ipsType_right">
+            <h2 class="heading_large gs_reveal">ラグジュアリー旅行</h2>
+            <h2 class="heading_large gs_reveal">Luxury Travel</h2>
+            <br>
+            <div class="gs_reveal">
+              <p class="detail gs_reveal">今この瞬間の人生のひと時をご家族やご友人との思い出作りに！</p>
+              <a class="gs_reveal" href="#">詳細
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#adadad"
+                  class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                  <path fill-rule="evenodd"
+                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                </svg>
+              </a>
+              </div">
+            </div>
+
+          </div>
+
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight py-5">
+            <div>
+              <img width="600" style="object-fit: cover;" src="images/luxury-travel.jpg" class="img-thumbnail" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid py-5">
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+            <div>
+              <img width="600" style="object-fit: cover;" src="images/gift.jpg" class="img-thumbnail" alt="">
+            </div>
+          </div>
+
+          <div class="ipsGrid_span7 ipsType_left">
+            <h2 class="heading_large gs_reveal">銘品ギフトサービス</h2>
+            <h3 class="heading_large gs_reveal">HANA21 Concierge Gift Selection</h3>
+            <br>
+            <div class="gs_reveal">
+              <p class="detail gs_reveal">特等のお品をご自身や大切な方へ</p>
+              <a class="gs_reveal " href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#adadad"
+                  class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                  <path fill-rule="evenodd"
+                    d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                </svg>
+                詳細</a>
+              </div">
+            </div>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid py-5">
+          <div class="ipsGrid_span7 ipsType_right">
+            <h2 class="heading_large gs_reveal">HANA21 クラブ</h2>
+            <h2 class="heading_large gs_reveal">Exclusive Events & Activities</h2>
+            <br>
+            <div class="gs_reveal">
+              <p class="detail gs_reveal">厳選されたイベントをぜひご体験ください！</p>
+              <a class="gs_reveal" href="#">詳細</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#adadad"
+                class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                <path fill-rule="evenodd"
+                  d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+              </svg>
+
+              </div">
+            </div>
+
+          </div>
+
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+            <div>
+              <img width="600" style="object-fit: cover;" src="images/hana-club.jpg" class="img-thumbnail" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid py-5">
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+            <div>
+              <img width="600" style="object-fit: cover;" src="images/currency.jpg" class="img-thumbnail" alt="">
+            </div>
+          </div>
+
+          <div class="ipsGrid_span7 ipsType_left">
+            <h2 class="heading_large gs_reveal">米国確定申告代行</h2>
+            <h3 class="heading_large gs_reveal">US Tax Return Agent(JP/US/KR)</h3>
+            <br>
+            <div class="gs_reveal">
+              <p class="detail gs_reveal">米国ドル収入の確定申告節税及び還付を最大化！</p>
+              <a class="gs_reveal " href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#adadad"
+                  class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                  <path fill-rule="evenodd"
+                    d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                </svg>
+                詳細</a>
+              </div">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / サービス -->
+
+    <!-- セミナー案内 -->
+    <section id="seminars" style="background: transparent;">
+      <div class="container text-center pt-5">
+        <h2 class="main-color pt-5"><strong>定期セミナー・現地視察ツアー</strong></h2>
+        <h3 class="pb-5" style="font-weight:400">Real Estate & Luxury Travel Tour</h3>
+      </div>
+      <div class="container">
+        <div class="row py-5 my-0">
+          <div class="col-6"></div>
+          <div class="col-6 seminar-container">
+            <img src="images/onsite-tour.jpg" alt="">
+            <div class="caption px-5">
+              <div class="mt-5">
+                <h2 class="text-center mt-5 seminar-heading">海外現地視察ツアー</h2>
+                <h3 class="text-center my-2 seminar-description" style="font-weight: 200;">Overseas Real Estate <br>
+                  Inspection Tour</h3>
+              </div>
+              <!-- <div class="d-flex justify-content-center mt-0"> -->
+              <a class="text-center seminar-link mb-5" href="#">
+                詳しくはこちら
+              </a>
+              <!-- </div> -->
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="row py-5 my-5">
+          <div class="col-6 seminar-container">
+            <img src="images/seminar.jpg" alt="">
+            <div class="caption px-5">
+              <div class="mt-5">
+                <h2 class="text-center mt-5 seminar-heading">海外不動産セミナー</h2>
+                <h3 class="text-center my-2 seminar-description" style="font-weight: 200;">Overseas Real Estate Seminar
+                </h3>
+              </div>
+              <!-- <div class="d-flex justify-content-center mt-0"> -->
+              <a class="text-center seminar-link mb-5" href="#">
+                詳しくはこちら
+              </a>
+              <!-- </div> -->
+
+
+            </div>
+          </div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </section>
+    <!-- / セミナー案内 -->
+
+    <!-- 会社代表あいさつ -->
+    <section id="ceo" class="bg-dark row">
+      <div class="col-2"></div>
+      <div class="col-4 my-5 py-5 ipsType_left">
+        <h5 class="py-4 main-color"><strong>——これからの時代に沿った資産形成</strong></h5>
+
+        <h4>
+          <p style="text-indent: 3rem;">
+            機関投資のプロが、個人投資コンサルティングサービスをご提供します。健全なポートフォリオ形成に全力で努めます。
+          </p>
+
+          <p style="text-indent: 3rem;">
+            国際都市ヨコハマより、皆様に国内の優良物件並びに国境を超えたコマースのご提案など、全て一括でお任せください。
+          </p>
+
+          <p style="text-indent: 3rem;">
+            そのほかにも、米国確定申告や世界のラグジュアリ旅行など、さまざまなご要望に合わせたOne-Stopサービスとしてもご利用いただければ幸甚です。
+          </p>
+        </h4>
+
+        <h3 class="ipsType_right main-color px-2"><strong>趙敏成</strong></h3>
+        <h5 class="ipsType_right px-2">HANA21 代表</h5>
+
+      </div>
+      <div class="col-6 my-5 py-5">
+        <img class="mx-5" src="images/Minsung.jpg" width="500px" alt="">
+      </div>
+    </section>
+    <!-- / 会社代表あいさつ -->
+
+    <!-- ニュースレター登録フォーム -->
+    <section id="newsletter-form" class="bg-dark d-flex justify-content-center">
+      <div class="container membership my-5">
+        <div class="row py-5">
+          <div class="col-2"></div>
+          <div class="col-8 ipsType_center">
+            <h2 class="main-color mb-3"><strong>無料ニュースレターのご案内</strong></h2>
+            <h4><strong>ご登録されたメールアドレスに旬の投資情報などをお届けいたします。</strong></h4>
+            <h4><a href="#" style="font-size: calc(1.275rem + 0.3vw)">
+                <strong>ご利用規約</strong></a>
+              <strong>に同意の上、ご登録ください。</strong>
+            </h4>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row py-1">
+          <div class="col-3"></div>
+          <form class="col-6">
+            <input type="username" class="form-control form-control-lg" id="Email" aria-describedby="emailHelp"
+              placeholder="ユーザー名">
+            <br>
+            <input type="email" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Eメールアドレス">
+            <br>
+            <select class="form-control form-control-lg">
+              <option class="gray" value="現在お住まいの国" selected disabled hidden>現在お住まいの国</option>
+              <option>日本</option>
+              <option>アメリカ合衆国</option>
+              <option>韓国</option>
+              <option>その他</option>
+            </select>
+            <br>
+            <div class="text-center">
+              <button class="col-8 btn btn-primary mx-5 mb-5" type="submit">利用規約に同意して登録</button>
+            </div>
+          </form>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+    <!--　/ ニュースレター登録フォーム -->
+
+    <!-- スライドショー -->
+    <section id="slider" class="bg-dark py-5 row">
+      <div class="swiper my-5" id="mySwiper">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide">
+            <div class="slide-title">Experience</div>
+            <img src="images/slide1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Events</div>
+            <img src="images/slide2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Enjoy</div>
+            <img src="images/slide3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Entrepreneur</div>
+            <img src="images/slide4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Exclusive</div>
+            <img src="images/slide5.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Enligntening</div>
+            <img src="images/slide6.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Enrich</div>
+            <img src="images/slide7.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Entertainment</div>
+            <img src="images/slide8.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">Ellaboration</div>
+            <img src="images/slide9.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination">
+
+        </div>
+      </div>
+
+
+    </section>
+    <!-- / スライドショー -->
+
+    <!-- フッター -->
+    <section id="footer" class="bg-light py-4 row">
+      <div class="container row justify-content-center m-0">
+        <div class="col-2"></div>
+        <div class="col-3 text-start my-3">
+          <ul class="list-unstyled m-0">
+            <!-- 会社概要リンク -->
+            <li>
+              <div>
+
+                <h6 style="font-weight: 200"><a href="#" class="footer-item">会社概要</a></h6>
+
+              </div>
+            </li>
+            <!-- / 会社概要リンク -->
+            <!-- プライバシーポリシーリンク -->
+            <li>
+              <div>
+
+                <h6 class="my-3" style="font-weight: 200"><a href="#" class="footer-item">プライベートポリシー</a></h6>
+
+              </div>
+            </li>
+            <!-- / プライバシーポリシーリンク -->
+          </ul>
+        </div>
+
+        <div class="col-3 text-start my-3">
+          <ul class="list-unstyled m-0">
+            <!-- 携帯番号 -->
+            <li>
+              <div class="d-flex">
+                <div class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#000000"
+                    class="bi bi-phone-vibrate" viewBox="0 0 16 16">
+                    <path
+                      d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z" />
+                    <path
+                      d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z" />
+                  </svg>
+                </div>
+                <h6 class="my-0 px-3" style="color: #000000;">080-5445-0203</h6>
+              </div>
+            </li>
+            <!-- /携帯番号 -->
+            <!-- Eメール -->
+            <li class="list-unstyled">
+              <div class="d-flex">
+                <div class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                  </svg>
+                </div>
+                <h6 class="my-3 px-3" style="color: #000000;">info@hana21.net</h6>
+              </div>
+            </li>
+            <!-- Eメール -->
+          </ul>
+        </div>
+        <!-- フェースブック -->
+        <div class="col-1 text-start my-3">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#3b5998" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+          </a>
+        </div>
+        <div class="col-1 text-start my-3">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#00B900" class="bi bi-line"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+            </svg>
+          </a>
+        </div>
+        <div class="col-2 text-start my-3">
+        </div>
+    </section>
+    <!-- / フッター -->
+
+    <!-- コピーライト -->
+    <div class="bg-dark text-center py-2 row">
+      <h6 class="copyright">&#169; 2023 HANA21.net </h6>
+    </div>
+    <!-- / コピーライト -->
+  </main>
+  <!-- / メイン -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scrolltrigger.js"></script>
+</body>
+
+</html>
